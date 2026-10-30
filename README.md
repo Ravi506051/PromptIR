@@ -118,3 +118,9 @@ When reporting image-restoration quality, use the metrics and evaluation protoco
 Record the exact checkpoint, preprocessing, image size, padding and tiling configuration for every inference run. Compare outputs consistently and preserve the original input alongside restored images.
 
 For reproducibility, record source versions, environment and dependency versions, configuration, and actual test outputs. Clearly label sample data and illustrative results; never commit secrets or private data.
+
+### Technical Deep Dive
+
+For reproducible PromptIR inference, record the checkpoint, model configuration, degradation mode, input color space, normalization, padding strategy, and tile size/overlap. Keep input and restored images paired by filename and evaluate them with identical preprocessing. When ground-truth clean images exist, calculate suitable full-reference metrics such as PSNR and SSIM; otherwise use carefully qualified visual comparisons.
+
+Suggested engineering checks: test dimensions that are not multiples of the model's required stride, verify padding is removed correctly, compare tiled and non-tiled outputs, and keep the evaluation split separate from training data. Preserve the original paper, code, and checkpoint attribution.
