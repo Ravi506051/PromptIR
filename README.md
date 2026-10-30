@@ -105,5 +105,10 @@ If you use our work, please consider citing:
 Should you have any questions, please contact pvaishnav2718@gmail.com
 
 
-**Acknowledgment:** This code is based on the [AirNet](https://github.com/XLearning-SCU/2022-CVPR-AirNet) and [Restormer](https://github.com/swz30/Restormer) repositories. 
+**Acknowledgment:** This code is based on the [AirNet](https://github.com/XLearning-SCU/2022-CVPR-AirNet) and [Restormer](https://github.com/swz30/Restormer) repositories.
 
+## Local Inference Notes
+
+This repository contains the upstream PromptIR research implementation. For local experiments, follow the upstream installation, dataset preparation, checkpoint, and testing instructions. Keep evaluation datasets separate from any training data and document the checkpoint, degradation setting, image preprocessing, and inference parameters used for each run.
+
+When reporting image-restoration quality, use the metrics and evaluation protocol appropriate to the selected benchmark, and compare outputs using the same input images and settings. Preserve upstream attribution and licensing when sharing modifications.
