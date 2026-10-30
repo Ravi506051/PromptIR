@@ -112,3 +112,9 @@ Should you have any questions, please contact pvaishnav2718@gmail.com
 This repository contains the upstream PromptIR research implementation. For local experiments, follow the upstream installation, dataset preparation, checkpoint, and testing instructions. Keep evaluation datasets separate from any training data and document the checkpoint, degradation setting, image preprocessing, and inference parameters used for each run.
 
 When reporting image-restoration quality, use the metrics and evaluation protocol appropriate to the selected benchmark, and compare outputs using the same input images and settings. Preserve upstream attribution and licensing when sharing modifications.
+
+## Project Development Notes
+
+Record the exact checkpoint, preprocessing, image size, padding and tiling configuration for every inference run. Compare outputs consistently and preserve the original input alongside restored images.
+
+For reproducibility, record source versions, environment and dependency versions, configuration, and actual test outputs. Clearly label sample data and illustrative results; never commit secrets or private data.
