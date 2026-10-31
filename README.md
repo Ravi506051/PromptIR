@@ -130,3 +130,11 @@ Suggested engineering checks: test dimensions that are not multiples of the mode
 This repository contains the upstream PromptIR implementation. For reproducible inference experiments, record the checkpoint source, model configuration, input resolution, preprocessing and normalization, padding or tiling settings, and output directory.
 
 When comparing restored images, use the same input images and settings across methods. If clean reference images are available, report suitable full-reference metrics such as PSNR and SSIM; otherwise describe the visual comparison as qualitative. Keep the original paper citation, authorship, and license information when sharing modified experiments.
+
+## Image Restoration Evaluation Notes
+
+- Evaluate restoration on paired, held-out images using clearly documented degradation settings.
+- Report PSNR and SSIM where appropriate, while also inspecting visual artifacts and edge preservation.
+- Keep input normalization, padding, tiling, and inference configuration consistent across comparisons.
+- Record checkpoint provenance, image dimensions, tile size, overlap, and runtime settings for reproducibility.
+- Compare outputs across degradation types; a metric improvement does not always guarantee perceptually better restoration.
