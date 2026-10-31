@@ -124,3 +124,9 @@ For reproducibility, record source versions, environment and dependency versions
 For reproducible PromptIR inference, record the checkpoint, model configuration, degradation mode, input color space, normalization, padding strategy, and tile size/overlap. Keep input and restored images paired by filename and evaluate them with identical preprocessing. When ground-truth clean images exist, calculate suitable full-reference metrics such as PSNR and SSIM; otherwise use carefully qualified visual comparisons.
 
 Suggested engineering checks: test dimensions that are not multiples of the model's required stride, verify padding is removed correctly, compare tiled and non-tiled outputs, and keep the evaluation split separate from training data. Preserve the original paper, code, and checkpoint attribution.
+
+## Research Reproduction Notes
+
+This repository contains the upstream PromptIR implementation. For reproducible inference experiments, record the checkpoint source, model configuration, input resolution, preprocessing and normalization, padding or tiling settings, and output directory.
+
+When comparing restored images, use the same input images and settings across methods. If clean reference images are available, report suitable full-reference metrics such as PSNR and SSIM; otherwise describe the visual comparison as qualitative. Keep the original paper citation, authorship, and license information when sharing modified experiments.
