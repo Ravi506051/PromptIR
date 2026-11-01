@@ -138,3 +138,9 @@ When comparing restored images, use the same input images and settings across me
 - Keep input normalization, padding, tiling, and inference configuration consistent across comparisons.
 - Record checkpoint provenance, image dimensions, tile size, overlap, and runtime settings for reproducibility.
 - Compare outputs across degradation types; a metric improvement does not always guarantee perceptually better restoration.
+
+## Local Research Notes
+
+This repository contains the original PromptIR research implementation. Preserve the authors' attribution, paper references, and license terms when using or modifying this code.
+
+For inference experiments, record the checkpoint, input resolution, padding or tiling strategy, overlap, and hardware environment. Compare restored outputs against the original inputs and, where ground truth exists, report PSNR/SSIM using a consistent evaluation protocol. Keep test images separate from training data and document any preprocessing differences.
